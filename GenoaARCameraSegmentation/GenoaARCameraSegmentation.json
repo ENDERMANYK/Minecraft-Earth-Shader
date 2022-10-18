@@ -1,0 +1,78 @@
+{
+  "version": 19,
+  "name": "Genoa/ARCameraSegmentation",
+  "hasParentName": false,
+  "samplerDefinitionMap": {
+    "SegmentationTexture": {
+      "reg": 0,
+      "access": "Read",
+      "precision": 0,
+      "allowUnorderedAccess": false,
+      "type": "Type2DExternal",
+      "textureFormat": "",
+      "hasDefaultTexture": false,
+      "hasCustomTypeInfo": false
+    },
+    "EstimatedDepthDataTexture": {
+      "reg": 1,
+      "access": "Read",
+      "precision": 0,
+      "allowUnorderedAccess": false,
+      "type": "Type2DExternal",
+      "textureFormat": "",
+      "hasDefaultTexture": false,
+      "hasCustomTypeInfo": false
+    },
+    "CameraBuffer": {
+      "reg": 2,
+      "access": "Read",
+      "precision": 0,
+      "allowUnorderedAccess": false,
+      "type": "Type2D",
+      "textureFormat": "",
+      "hasDefaultTexture": false,
+      "hasCustomTypeInfo": false
+    },
+    "FramebufferColor": {
+      "reg": 3,
+      "access": "Read",
+      "precision": 0,
+      "allowUnorderedAccess": false,
+      "type": "Type2D",
+      "textureFormat": "",
+      "hasDefaultTexture": false,
+      "hasCustomTypeInfo": false
+    },
+    "FramebufferDepth": {
+      "reg": 4,
+      "access": "Read",
+      "precision": 0,
+      "allowUnorderedAccess": false,
+      "type": "Type2D",
+      "textureFormat": "",
+      "hasDefaultTexture": false,
+      "hasCustomTypeInfo": false
+    }
+  },
+  "propertyFieldMap": {
+    "CameraUVTransform": {
+      "num": 4,
+      "type": 2,
+      "hasData": false
+    },
+    "CameraInfo": {
+      "num": 1,
+      "type": 2,
+      "hasData": true,
+      "vectorData": [
+        0.5,
+        2000.0,
+        14.0,
+        0.0
+      ]
+    }
+  },
+  "passes": [
+    "AROcclusionSegmentation"
+  ]
+}

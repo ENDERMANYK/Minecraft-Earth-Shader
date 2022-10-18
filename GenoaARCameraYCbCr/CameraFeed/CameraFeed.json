@@ -1,0 +1,237 @@
+{
+  "graphicsProfile": "LowDef",
+  "fallback": "",
+  "hasDefaultBlendMode": false,
+  "defaultFlagModes": {
+    "NightMode": "Off"
+  },
+  "variantList": [
+    {
+      "isSupported": true,
+      "flagModeList": [
+        {
+          "key": "NightMode",
+          "value": "On"
+        }
+      ],
+      "shaderCodes": [
+        {
+          "platformShaderStage": {
+            "stageName": "Vertex",
+            "platformName": "ESSL_100",
+            "stage": "Vertex",
+            "platform": "ESSL_100"
+          },
+          "shaderCode": {
+            "shaderInputMap": {
+              "position": {
+                "type": "Vec3",
+                "semantic": {
+                  "input": "Position",
+                  "index": 0
+                },
+                "isPerInstance": false
+              },
+              "texcoord0": {
+                "type": "Vec3",
+                "semantic": {
+                  "input": "TexCoord",
+                  "index": 0
+                },
+                "isPerInstance": false
+              }
+            },
+            "sourceHash": 1601365037835347440,
+            "bgfxShaderData": {
+              "magic": 1448298501,
+              "hash": 1010703983,
+              "uniforms": [
+                {
+                  "name": "CameraUVTransform",
+                  "type": 2,
+                  "num": 4,
+                  "regIndex": 0,
+                  "regCount": 4
+                },
+                {
+                  "name": "CameraColor",
+                  "type": 2,
+                  "num": 1,
+                  "regIndex": 0,
+                  "regCount": 1
+                }
+              ],
+              "codeFile": "0.ESSL_100.Vertex.glsl"
+            }
+          }
+        },
+        {
+          "platformShaderStage": {
+            "stageName": "Fragment",
+            "platformName": "ESSL_100",
+            "stage": "Fragment",
+            "platform": "ESSL_100"
+          },
+          "shaderCode": {
+            "shaderInputMap": {
+              "texcoord0": {
+                "type": "Vec2",
+                "semantic": {
+                  "input": "TexCoord",
+                  "index": 0
+                },
+                "isPerInstance": false
+              }
+            },
+            "sourceHash": -5483613647889456639,
+            "bgfxShaderData": {
+              "magic": 1179863045,
+              "hash": 1010703983,
+              "uniforms": [
+                {
+                  "name": "MultiplyColor",
+                  "type": 2,
+                  "num": 1,
+                  "regIndex": 0,
+                  "regCount": 1
+                },
+                {
+                  "name": "OverlayColor",
+                  "type": 2,
+                  "num": 1,
+                  "regIndex": 0,
+                  "regCount": 1
+                },
+                {
+                  "name": "DarkenColor",
+                  "type": 2,
+                  "num": 1,
+                  "regIndex": 0,
+                  "regCount": 1
+                },
+                {
+                  "name": "s_CameraTextureY",
+                  "type": 0,
+                  "num": 1,
+                  "regIndex": 0,
+                  "regCount": 1
+                },
+                {
+                  "name": "s_CameraTextureCbCr",
+                  "type": 0,
+                  "num": 1,
+                  "regIndex": 0,
+                  "regCount": 1
+                }
+              ],
+              "codeFile": "0.ESSL_100.Fragment.glsl"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "isSupported": true,
+      "flagModeList": [
+        {
+          "key": "NightMode",
+          "value": "Off"
+        }
+      ],
+      "shaderCodes": [
+        {
+          "platformShaderStage": {
+            "stageName": "Vertex",
+            "platformName": "ESSL_100",
+            "stage": "Vertex",
+            "platform": "ESSL_100"
+          },
+          "shaderCode": {
+            "shaderInputMap": {
+              "position": {
+                "type": "Vec3",
+                "semantic": {
+                  "input": "Position",
+                  "index": 0
+                },
+                "isPerInstance": false
+              },
+              "texcoord0": {
+                "type": "Vec3",
+                "semantic": {
+                  "input": "TexCoord",
+                  "index": 0
+                },
+                "isPerInstance": false
+              }
+            },
+            "sourceHash": -4845139556031476941,
+            "bgfxShaderData": {
+              "magic": 1448298501,
+              "hash": 1010703983,
+              "uniforms": [
+                {
+                  "name": "CameraUVTransform",
+                  "type": 2,
+                  "num": 4,
+                  "regIndex": 0,
+                  "regCount": 4
+                },
+                {
+                  "name": "CameraColor",
+                  "type": 2,
+                  "num": 1,
+                  "regIndex": 0,
+                  "regCount": 1
+                }
+              ],
+              "codeFile": "1.ESSL_100.Vertex.glsl"
+            }
+          }
+        },
+        {
+          "platformShaderStage": {
+            "stageName": "Fragment",
+            "platformName": "ESSL_100",
+            "stage": "Fragment",
+            "platform": "ESSL_100"
+          },
+          "shaderCode": {
+            "shaderInputMap": {
+              "texcoord0": {
+                "type": "Vec2",
+                "semantic": {
+                  "input": "TexCoord",
+                  "index": 0
+                },
+                "isPerInstance": false
+              }
+            },
+            "sourceHash": 1152826805922211068,
+            "bgfxShaderData": {
+              "magic": 1179863045,
+              "hash": 1010703983,
+              "uniforms": [
+                {
+                  "name": "s_CameraTextureY",
+                  "type": 0,
+                  "num": 1,
+                  "regIndex": 0,
+                  "regCount": 1
+                },
+                {
+                  "name": "s_CameraTextureCbCr",
+                  "type": 0,
+                  "num": 1,
+                  "regIndex": 0,
+                  "regCount": 1
+                }
+              ],
+              "codeFile": "1.ESSL_100.Fragment.glsl"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,135 @@
+{
+  "graphicsProfile": "LowDef",
+  "fallback": "",
+  "hasDefaultBlendMode": false,
+  "defaultFlagModes": {},
+  "variantList": [
+    {
+      "isSupported": true,
+      "flagModeList": [],
+      "shaderCodes": [
+        {
+          "platformShaderStage": {
+            "stageName": "Vertex",
+            "platformName": "ESSL_100",
+            "stage": "Vertex",
+            "platform": "ESSL_100"
+          },
+          "shaderCode": {
+            "shaderInputMap": {
+              "position": {
+                "type": "Vec3",
+                "semantic": {
+                  "input": "Position",
+                  "index": 0
+                },
+                "isPerInstance": false
+              },
+              "texcoord0": {
+                "type": "Vec3",
+                "semantic": {
+                  "input": "TexCoord",
+                  "index": 0
+                },
+                "isPerInstance": false
+              }
+            },
+            "sourceHash": -4272262913577300380,
+            "bgfxShaderData": {
+              "magic": 1448298501,
+              "hash": 126812345,
+              "uniforms": [
+                {
+                  "name": "CameraUVTransform",
+                  "type": 2,
+                  "num": 4,
+                  "regIndex": 0,
+                  "regCount": 4
+                }
+              ],
+              "codeFile": "0.ESSL_100.Vertex.glsl"
+            }
+          }
+        },
+        {
+          "platformShaderStage": {
+            "stageName": "Fragment",
+            "platformName": "ESSL_100",
+            "stage": "Fragment",
+            "platform": "ESSL_100"
+          },
+          "shaderCode": {
+            "shaderInputMap": {
+              "texcoord0": {
+                "type": "Vec2",
+                "semantic": {
+                  "input": "TexCoord",
+                  "index": 0
+                },
+                "isPerInstance": false
+              },
+              "texcoord1": {
+                "type": "Vec2",
+                "semantic": {
+                  "input": "TexCoord",
+                  "index": 1
+                },
+                "isPerInstance": false
+              }
+            },
+            "sourceHash": 8591934478041023620,
+            "bgfxShaderData": {
+              "magic": 1179863045,
+              "hash": 126812345,
+              "uniforms": [
+                {
+                  "name": "CameraInfo",
+                  "type": 2,
+                  "num": 1,
+                  "regIndex": 0,
+                  "regCount": 1
+                },
+                {
+                  "name": "s_SegmentationTexture",
+                  "type": 0,
+                  "num": 1,
+                  "regIndex": 0,
+                  "regCount": 1
+                },
+                {
+                  "name": "s_EstimatedDepthDataTexture",
+                  "type": 0,
+                  "num": 1,
+                  "regIndex": 0,
+                  "regCount": 1
+                },
+                {
+                  "name": "s_CameraBuffer",
+                  "type": 0,
+                  "num": 1,
+                  "regIndex": 0,
+                  "regCount": 1
+                },
+                {
+                  "name": "s_FramebufferColor",
+                  "type": 0,
+                  "num": 1,
+                  "regIndex": 0,
+                  "regCount": 1
+                },
+                {
+                  "name": "s_FramebufferDepth",
+                  "type": 0,
+                  "num": 1,
+                  "regIndex": 0,
+                  "regCount": 1
+                }
+              ],
+              "codeFile": "0.ESSL_100.Fragment.glsl"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

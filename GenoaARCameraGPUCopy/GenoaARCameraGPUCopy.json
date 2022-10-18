@@ -1,0 +1,33 @@
+{
+  "version": 19,
+  "name": "Genoa/ARCameraGPUCopy",
+  "hasParentName": false,
+  "samplerDefinitionMap": {
+    "CameraTexture": {
+      "reg": 0,
+      "access": "Read",
+      "precision": 0,
+      "allowUnorderedAccess": false,
+      "type": "Type2DExternal",
+      "textureFormat": "",
+      "hasDefaultTexture": false,
+      "hasCustomTypeInfo": false
+    }
+  },
+  "propertyFieldMap": {
+    "CameraColor": {
+      "num": 1,
+      "type": 2,
+      "hasData": true,
+      "vectorData": [
+        1.0,
+        1.0,
+        1.0,
+        0.0
+      ]
+    }
+  },
+  "passes": [
+    "GPUCopy"
+  ]
+}
