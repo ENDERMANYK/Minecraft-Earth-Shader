@@ -1,0 +1,66 @@
+{
+  "version": 19,
+  "name": "GenoaClouds",
+  "hasParentName": false,
+  "samplerDefinitionMap": {},
+  "propertyFieldMap": {
+    "LightAmbientColorAndIntensity": {
+      "num": 1,
+      "type": 2,
+      "hasData": true,
+      "vectorData": [
+        0.2,
+        0.2,
+        0.2,
+        1.0
+      ]
+    },
+    "LightWorldSpaceDirection": {
+      "num": 1,
+      "type": 2,
+      "hasData": true,
+      "vectorData": [
+        0.0,
+        -1.0,
+        0.0,
+        1.0
+      ]
+    },
+    "LightDiffuseColorAndIntensity": {
+      "num": 1,
+      "type": 2,
+      "hasData": true,
+      "vectorData": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    "DistanceControl": {
+      "num": 1,
+      "type": 2,
+      "hasData": true,
+      "vectorData": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "CloudColor": {
+      "num": 1,
+      "type": 2,
+      "hasData": true,
+      "vectorData": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  "passes": [
+    "Transparent"
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "version": 19,
+  "name": "Genoa/SkinnedMeshOutline",
+  "hasParentName": false,
+  "samplerDefinitionMap": {},
+  "propertyFieldMap": {
+    "OverlayColor": {
+      "num": 1,
+      "type": 2,
+      "hasData": true,
+      "vectorData": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    "LightWorldSpaceDirection": {
+      "num": 1,
+      "type": 2,
+      "hasData": true,
+      "vectorData": [
+        0.0,
+        -1.0,
+        0.0,
+        1.0
+      ]
+    },
+    "LightDiffuseColorAndIntensity": {
+      "num": 1,
+      "type": 2,
+      "hasData": true,
+      "vectorData": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    "BoneVectors": {
+      "num": 48,
+      "type": 2,
+      "hasData": false
+    },
+    "Thickness": {
+      "num": 1,
+      "type": 2,
+      "hasData": true,
+      "vectorData": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "passes": [
+    "DepthOnly",
+    "Opaque",
+    "AlphaTest",
+    "Transparent"
+  ]
+}

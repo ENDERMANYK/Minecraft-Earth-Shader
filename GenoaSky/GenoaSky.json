@@ -1,0 +1,43 @@
+{
+  "version": 19,
+  "name": "Genoa/Sky",
+  "hasParentName": false,
+  "samplerDefinitionMap": {},
+  "propertyFieldMap": {
+    "GradientCurveSelector": {
+      "num": 1,
+      "type": 2,
+      "hasData": false
+    },
+    "SkyColor": {
+      "num": 1,
+      "type": 2,
+      "hasData": true,
+      "vectorData": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    "GradientCurveAmount": {
+      "num": 1,
+      "type": 2,
+      "hasData": false
+    },
+    "FogColor": {
+      "num": 1,
+      "type": 2,
+      "hasData": true,
+      "vectorData": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  "passes": [
+    "Opaque"
+  ]
+}

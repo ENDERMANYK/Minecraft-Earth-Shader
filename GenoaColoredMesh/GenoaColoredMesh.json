@@ -1,0 +1,22 @@
+{
+  "version": 19,
+  "name": "Genoa/ColoredMesh",
+  "hasParentName": false,
+  "samplerDefinitionMap": {},
+  "propertyFieldMap": {
+    "MeshColor": {
+      "num": 1,
+      "type": 2,
+      "hasData": true,
+      "vectorData": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  "passes": [
+    "Transparent"
+  ]
+}

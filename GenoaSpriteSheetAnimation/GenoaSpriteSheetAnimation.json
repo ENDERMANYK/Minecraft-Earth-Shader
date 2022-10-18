@@ -1,0 +1,54 @@
+{
+  "version": 19,
+  "name": "Genoa/SpriteSheetAnimation",
+  "hasParentName": false,
+  "samplerDefinitionMap": {
+    "SpriteSheet": {
+      "reg": 0,
+      "access": "Read",
+      "precision": 0,
+      "allowUnorderedAccess": false,
+      "type": "Type2D",
+      "textureFormat": "",
+      "hasDefaultTexture": false,
+      "hasCustomTypeInfo": false
+    }
+  },
+  "propertyFieldMap": {
+    "InterpolationFactor": {
+      "num": 1,
+      "type": 2,
+      "hasData": true,
+      "vectorData": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "CurrentFrame": {
+      "num": 1,
+      "type": 2,
+      "hasData": false
+    },
+    "NextFrame": {
+      "num": 1,
+      "type": 2,
+      "hasData": false
+    },
+    "Tint": {
+      "num": 1,
+      "type": 2,
+      "hasData": true,
+      "vectorData": [
+        1.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    }
+  },
+  "passes": [
+    "Transparent"
+  ]
+}

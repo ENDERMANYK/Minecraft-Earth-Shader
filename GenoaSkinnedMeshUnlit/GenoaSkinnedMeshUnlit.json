@@ -1,0 +1,164 @@
+{
+  "version": 19,
+  "name": "Genoa/SkinnedMeshUnlit",
+  "hasParentName": true,
+  "parentName": "Genoa/SkinnedMesh",
+  "samplerDefinitionMap": {
+    "MatTexture": {
+      "reg": 0,
+      "access": "Read",
+      "precision": 0,
+      "allowUnorderedAccess": false,
+      "type": "Type2D",
+      "textureFormat": "",
+      "hasDefaultTexture": false,
+      "hasCustomTypeInfo": false
+    }
+  },
+  "propertyFieldMap": {
+    "LightWorldSpaceDirection": {
+      "num": 1,
+      "type": 2,
+      "hasData": true,
+      "vectorData": [
+        0.0,
+        -1.0,
+        0.0,
+        1.0
+      ]
+    },
+    "LightDiffuseColorAndIntensity": {
+      "num": 1,
+      "type": 2,
+      "hasData": true,
+      "vectorData": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    "FogColor": {
+      "num": 1,
+      "type": 2,
+      "hasData": true,
+      "vectorData": [
+        1.0,
+        1.0,
+        1.0,
+        0.0
+      ]
+    },
+    "SurfaceRoughness": {
+      "num": 1,
+      "type": 2,
+      "hasData": true,
+      "vectorData": [
+        0.5,
+        0.5,
+        0.5,
+        0.5
+      ]
+    },
+    "HudOpacity": {
+      "num": 1,
+      "type": 2,
+      "hasData": true,
+      "vectorData": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    "BoneVectors": {
+      "num": 48,
+      "type": 2,
+      "hasData": false
+    },
+    "PlayerPosition": {
+      "num": 1,
+      "type": 2,
+      "hasData": true,
+      "vectorData": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "MatColor": {
+      "num": 1,
+      "type": 2,
+      "hasData": true,
+      "vectorData": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    "UVAnimation": {
+      "num": 1,
+      "type": 2,
+      "hasData": true,
+      "vectorData": [
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ]
+    },
+    "ChangeColor": {
+      "num": 1,
+      "type": 2,
+      "hasData": true,
+      "vectorData": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    "FogControl": {
+      "num": 1,
+      "type": 2,
+      "hasData": true,
+      "vectorData": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "OverlayColor": {
+      "num": 1,
+      "type": 2,
+      "hasData": true,
+      "vectorData": [
+        1.0,
+        1.0,
+        1.0,
+        0.0
+      ]
+    },
+    "MultiplicativeTintColor": {
+      "num": 1,
+      "type": 2,
+      "hasData": true,
+      "vectorData": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  "passes": [
+    "DepthOnlyAlphaTest",
+    "DepthOnly",
+    "Opaque",
+    "AlphaTest",
+    "Transparent"
+  ]
+}

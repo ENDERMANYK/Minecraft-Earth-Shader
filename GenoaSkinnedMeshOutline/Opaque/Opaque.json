@@ -1,0 +1,383 @@
+{
+  "graphicsProfile": "LowDef",
+  "fallback": "",
+  "hasDefaultBlendMode": false,
+  "defaultFlagModes": {
+    "Instancing": "Off"
+  },
+  "variantList": [
+    {
+      "isSupported": true,
+      "flagModeList": [
+        {
+          "key": "Instancing",
+          "value": "Off"
+        }
+      ],
+      "shaderCodes": [
+        {
+          "platformShaderStage": {
+            "stageName": "Vertex",
+            "platformName": "ESSL_100",
+            "stage": "Vertex",
+            "platform": "ESSL_100"
+          },
+          "shaderCode": {
+            "shaderInputMap": {
+              "boneId": {
+                "type": "Int",
+                "semantic": {
+                  "input": "Indices",
+                  "index": 0
+                },
+                "isPerInstance": false
+              },
+              "normal": {
+                "type": "Vec4",
+                "semantic": {
+                  "input": "Normal",
+                  "index": 0
+                },
+                "isPerInstance": false
+              },
+              "position": {
+                "type": "Vec3",
+                "semantic": {
+                  "input": "Position",
+                  "index": 0
+                },
+                "isPerInstance": false
+              },
+              "instanceData0": {
+                "type": "Vec4",
+                "semantic": {
+                  "input": "TexCoord",
+                  "index": 7
+                },
+                "isPerInstance": true
+              },
+              "texcoord0": {
+                "type": "Vec2",
+                "semantic": {
+                  "input": "TexCoord",
+                  "index": 0
+                },
+                "isPerInstance": false
+              },
+              "instanceData1": {
+                "type": "Vec4",
+                "semantic": {
+                  "input": "TexCoord",
+                  "index": 6
+                },
+                "isPerInstance": true
+              },
+              "color0": {
+                "type": "Vec4",
+                "semantic": {
+                  "input": "Color",
+                  "index": 0
+                },
+                "isPerInstance": false
+              },
+              "instanceData2": {
+                "type": "Vec4",
+                "semantic": {
+                  "input": "TexCoord",
+                  "index": 5
+                },
+                "isPerInstance": true
+              },
+              "instanceData3": {
+                "type": "Vec4",
+                "semantic": {
+                  "input": "TexCoord",
+                  "index": 4
+                },
+                "isPerInstance": true
+              },
+              "texcoord1": {
+                "type": "Vec2",
+                "semantic": {
+                  "input": "TexCoord",
+                  "index": 1
+                },
+                "isPerInstance": false
+              },
+              "texcoord2": {
+                "type": "Vec2",
+                "semantic": {
+                  "input": "TexCoord",
+                  "index": 2
+                },
+                "isPerInstance": false
+              }
+            },
+            "sourceHash": 6027765237718731203,
+            "bgfxShaderData": {
+              "magic": 1448298501,
+              "hash": -504200447,
+              "uniforms": [
+                {
+                  "name": "u_viewProj",
+                  "type": 4,
+                  "num": 1,
+                  "regIndex": 0,
+                  "regCount": 1
+                },
+                {
+                  "name": "u_model",
+                  "type": 4,
+                  "num": 32,
+                  "regIndex": 0,
+                  "regCount": 32
+                },
+                {
+                  "name": "Thickness",
+                  "type": 2,
+                  "num": 1,
+                  "regIndex": 0,
+                  "regCount": 1
+                },
+                {
+                  "name": "BoneVectors",
+                  "type": 2,
+                  "num": 48,
+                  "regIndex": 0,
+                  "regCount": 48
+                }
+              ],
+              "codeFile": "0.ESSL_100.Vertex.glsl"
+            }
+          }
+        },
+        {
+          "platformShaderStage": {
+            "stageName": "Fragment",
+            "platformName": "ESSL_100",
+            "stage": "Fragment",
+            "platform": "ESSL_100"
+          },
+          "shaderCode": {
+            "shaderInputMap": {
+              "texcoord0": {
+                "type": "Vec2",
+                "semantic": {
+                  "input": "TexCoord",
+                  "index": 0
+                },
+                "isPerInstance": false
+              },
+              "color0": {
+                "type": "Vec4",
+                "semantic": {
+                  "input": "Color",
+                  "index": 0
+                },
+                "isPerInstance": false
+              }
+            },
+            "sourceHash": -5516399760009413515,
+            "bgfxShaderData": {
+              "magic": 1179863045,
+              "hash": -504200447,
+              "uniforms": [
+                {
+                  "name": "OverlayColor",
+                  "type": 2,
+                  "num": 1,
+                  "regIndex": 0,
+                  "regCount": 1
+                }
+              ],
+              "codeFile": "0.ESSL_100.Fragment.glsl"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "isSupported": true,
+      "flagModeList": [
+        {
+          "key": "Instancing",
+          "value": "On"
+        }
+      ],
+      "shaderCodes": [
+        {
+          "platformShaderStage": {
+            "stageName": "Vertex",
+            "platformName": "ESSL_100",
+            "stage": "Vertex",
+            "platform": "ESSL_100"
+          },
+          "shaderCode": {
+            "shaderInputMap": {
+              "boneId": {
+                "type": "Int",
+                "semantic": {
+                  "input": "Indices",
+                  "index": 0
+                },
+                "isPerInstance": false
+              },
+              "normal": {
+                "type": "Vec4",
+                "semantic": {
+                  "input": "Normal",
+                  "index": 0
+                },
+                "isPerInstance": false
+              },
+              "position": {
+                "type": "Vec3",
+                "semantic": {
+                  "input": "Position",
+                  "index": 0
+                },
+                "isPerInstance": false
+              },
+              "instanceData0": {
+                "type": "Vec4",
+                "semantic": {
+                  "input": "TexCoord",
+                  "index": 7
+                },
+                "isPerInstance": true
+              },
+              "texcoord0": {
+                "type": "Vec2",
+                "semantic": {
+                  "input": "TexCoord",
+                  "index": 0
+                },
+                "isPerInstance": false
+              },
+              "instanceData1": {
+                "type": "Vec4",
+                "semantic": {
+                  "input": "TexCoord",
+                  "index": 6
+                },
+                "isPerInstance": true
+              },
+              "color0": {
+                "type": "Vec4",
+                "semantic": {
+                  "input": "Color",
+                  "index": 0
+                },
+                "isPerInstance": false
+              },
+              "instanceData2": {
+                "type": "Vec4",
+                "semantic": {
+                  "input": "TexCoord",
+                  "index": 5
+                },
+                "isPerInstance": true
+              },
+              "instanceData3": {
+                "type": "Vec4",
+                "semantic": {
+                  "input": "TexCoord",
+                  "index": 4
+                },
+                "isPerInstance": true
+              },
+              "texcoord1": {
+                "type": "Vec2",
+                "semantic": {
+                  "input": "TexCoord",
+                  "index": 1
+                },
+                "isPerInstance": false
+              },
+              "texcoord2": {
+                "type": "Vec2",
+                "semantic": {
+                  "input": "TexCoord",
+                  "index": 2
+                },
+                "isPerInstance": false
+              }
+            },
+            "sourceHash": 2551565266680331793,
+            "bgfxShaderData": {
+              "magic": 1448298501,
+              "hash": -504200447,
+              "uniforms": [
+                {
+                  "name": "u_viewProj",
+                  "type": 4,
+                  "num": 1,
+                  "regIndex": 0,
+                  "regCount": 1
+                },
+                {
+                  "name": "Thickness",
+                  "type": 2,
+                  "num": 1,
+                  "regIndex": 0,
+                  "regCount": 1
+                },
+                {
+                  "name": "BoneVectors",
+                  "type": 2,
+                  "num": 48,
+                  "regIndex": 0,
+                  "regCount": 48
+                }
+              ],
+              "codeFile": "1.ESSL_100.Vertex.glsl"
+            }
+          }
+        },
+        {
+          "platformShaderStage": {
+            "stageName": "Fragment",
+            "platformName": "ESSL_100",
+            "stage": "Fragment",
+            "platform": "ESSL_100"
+          },
+          "shaderCode": {
+            "shaderInputMap": {
+              "texcoord0": {
+                "type": "Vec2",
+                "semantic": {
+                  "input": "TexCoord",
+                  "index": 0
+                },
+                "isPerInstance": false
+              },
+              "color0": {
+                "type": "Vec4",
+                "semantic": {
+                  "input": "Color",
+                  "index": 0
+                },
+                "isPerInstance": false
+              }
+            },
+            "sourceHash": -8799120138689355634,
+            "bgfxShaderData": {
+              "magic": 1179863045,
+              "hash": -504200447,
+              "uniforms": [
+                {
+                  "name": "OverlayColor",
+                  "type": 2,
+                  "num": 1,
+                  "regIndex": 0,
+                  "regCount": 1
+                }
+              ],
+              "codeFile": "1.ESSL_100.Fragment.glsl"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,255 @@
+{
+  "version": 19,
+  "name": "Genoa/SkinnedMesh",
+  "hasParentName": false,
+  "samplerDefinitionMap": {
+    "ShadowTexture": {
+      "reg": 0,
+      "access": "Read",
+      "precision": 2,
+      "allowUnorderedAccess": false,
+      "type": "Type2D",
+      "textureFormat": "",
+      "hasDefaultTexture": false,
+      "hasCustomTypeInfo": false
+    },
+    "MatTexture": {
+      "reg": 1,
+      "access": "Read",
+      "precision": 0,
+      "allowUnorderedAccess": false,
+      "type": "Type2D",
+      "textureFormat": "",
+      "hasDefaultTexture": false,
+      "hasCustomTypeInfo": false
+    }
+  },
+  "propertyFieldMap": {
+    "LightWorldSpaceDirection": {
+      "num": 1,
+      "type": 2,
+      "hasData": true,
+      "vectorData": [
+        0.0,
+        -1.0,
+        0.0,
+        1.0
+      ]
+    },
+    "ShadowFilterSize": {
+      "num": 1,
+      "type": 2,
+      "hasData": true,
+      "vectorData": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    "LightDiffuseColorAndIntensity": {
+      "num": 1,
+      "type": 2,
+      "hasData": true,
+      "vectorData": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    "FogColor": {
+      "num": 1,
+      "type": 2,
+      "hasData": true,
+      "vectorData": [
+        1.0,
+        1.0,
+        1.0,
+        0.0
+      ]
+    },
+    "SurfaceRoughness": {
+      "num": 1,
+      "type": 2,
+      "hasData": true,
+      "vectorData": [
+        0.5,
+        0.5,
+        0.5,
+        0.5
+      ]
+    },
+    "HudOpacity": {
+      "num": 1,
+      "type": 2,
+      "hasData": true,
+      "vectorData": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    "BoneVectors": {
+      "num": 48,
+      "type": 2,
+      "hasData": false
+    },
+    "PlayerPosition": {
+      "num": 1,
+      "type": 2,
+      "hasData": true,
+      "vectorData": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "UVAnimation": {
+      "num": 1,
+      "type": 2,
+      "hasData": true,
+      "vectorData": [
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ]
+    },
+    "MatColor": {
+      "num": 1,
+      "type": 2,
+      "hasData": true,
+      "vectorData": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    "ShadowBias": {
+      "num": 1,
+      "type": 2,
+      "hasData": true,
+      "vectorData": [
+        2.5E-4,
+        2.5E-4,
+        2.5E-4,
+        2.5E-4
+      ]
+    },
+    "ChangeColor": {
+      "num": 1,
+      "type": 2,
+      "hasData": true,
+      "vectorData": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    "FogControl": {
+      "num": 1,
+      "type": 2,
+      "hasData": true,
+      "vectorData": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "OverlayColor": {
+      "num": 1,
+      "type": 2,
+      "hasData": true,
+      "vectorData": [
+        1.0,
+        1.0,
+        1.0,
+        0.0
+      ]
+    },
+    "MultiplicativeTintColor": {
+      "num": 1,
+      "type": 2,
+      "hasData": true,
+      "vectorData": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    "ShadowTexel": {
+      "num": 1,
+      "type": 2,
+      "hasData": true,
+      "vectorData": [
+        1.0,
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    "ShadowFadeAmount": {
+      "num": 1,
+      "type": 2,
+      "hasData": true,
+      "vectorData": [
+        16.0,
+        16.0,
+        16.0,
+        16.0
+      ]
+    },
+    "ShadowIntensity": {
+      "num": 1,
+      "type": 2,
+      "hasData": true,
+      "vectorData": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    "LightAmbientColorAndIntensity": {
+      "num": 1,
+      "type": 2,
+      "hasData": true,
+      "vectorData": [
+        0.1,
+        0.1,
+        0.1,
+        1.0
+      ]
+    },
+    "ShadowColor": {
+      "num": 1,
+      "type": 2,
+      "hasData": true,
+      "vectorData": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "ShadowTransform": {
+      "num": 1,
+      "type": 4,
+      "hasData": false
+    }
+  },
+  "passes": [
+    "DepthOnlyAlphaTest",
+    "DepthOnly",
+    "Opaque",
+    "AlphaTest",
+    "Transparent"
+  ]
+}

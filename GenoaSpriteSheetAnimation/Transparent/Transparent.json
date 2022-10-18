@@ -1,0 +1,120 @@
+{
+  "graphicsProfile": "LowDef",
+  "fallback": "",
+  "hasDefaultBlendMode": false,
+  "defaultFlagModes": {},
+  "variantList": [
+    {
+      "isSupported": true,
+      "flagModeList": [],
+      "shaderCodes": [
+        {
+          "platformShaderStage": {
+            "stageName": "Vertex",
+            "platformName": "ESSL_100",
+            "stage": "Vertex",
+            "platform": "ESSL_100"
+          },
+          "shaderCode": {
+            "shaderInputMap": {
+              "position": {
+                "type": "Vec3",
+                "semantic": {
+                  "input": "Position",
+                  "index": 0
+                },
+                "isPerInstance": false
+              },
+              "texcoord0": {
+                "type": "Vec2",
+                "semantic": {
+                  "input": "TexCoord",
+                  "index": 0
+                },
+                "isPerInstance": false
+              }
+            },
+            "sourceHash": 3612471252317890304,
+            "bgfxShaderData": {
+              "magic": 1448298501,
+              "hash": 1010703983,
+              "uniforms": [
+                {
+                  "name": "u_modelViewProj",
+                  "type": 4,
+                  "num": 1,
+                  "regIndex": 0,
+                  "regCount": 1
+                }
+              ],
+              "codeFile": "0.ESSL_100.Vertex.glsl"
+            }
+          }
+        },
+        {
+          "platformShaderStage": {
+            "stageName": "Fragment",
+            "platformName": "ESSL_100",
+            "stage": "Fragment",
+            "platform": "ESSL_100"
+          },
+          "shaderCode": {
+            "shaderInputMap": {
+              "texcoord0": {
+                "type": "Vec2",
+                "semantic": {
+                  "input": "TexCoord",
+                  "index": 0
+                },
+                "isPerInstance": false
+              }
+            },
+            "sourceHash": 2302398080714846578,
+            "bgfxShaderData": {
+              "magic": 1179863045,
+              "hash": 1010703983,
+              "uniforms": [
+                {
+                  "name": "CurrentFrame",
+                  "type": 2,
+                  "num": 1,
+                  "regIndex": 0,
+                  "regCount": 1
+                },
+                {
+                  "name": "NextFrame",
+                  "type": 2,
+                  "num": 1,
+                  "regIndex": 0,
+                  "regCount": 1
+                },
+                {
+                  "name": "InterpolationFactor",
+                  "type": 2,
+                  "num": 1,
+                  "regIndex": 0,
+                  "regCount": 1
+                },
+                {
+                  "name": "Tint",
+                  "type": 2,
+                  "num": 1,
+                  "regIndex": 0,
+                  "regCount": 1
+                },
+                {
+                  "name": "s_SpriteSheet",
+                  "type": 0,
+                  "num": 1,
+                  "regIndex": 0,
+                  "regCount": 1
+                }
+              ],
+              "codeFile": "0.ESSL_100.Fragment.glsl"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

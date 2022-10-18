@@ -1,0 +1,792 @@
+{
+  "graphicsProfile": "LowDef",
+  "fallback": "",
+  "hasDefaultBlendMode": false,
+  "defaultFlagModes": {
+    "Instancing": "Off"
+  },
+  "variantList": [
+    {
+      "isSupported": true,
+      "flagModeList": [
+        {
+          "key": "Instancing",
+          "value": "Off"
+        }
+      ],
+      "shaderCodes": [
+        {
+          "platformShaderStage": {
+            "stageName": "Vertex",
+            "platformName": "ESSL_100",
+            "stage": "Vertex",
+            "platform": "ESSL_100"
+          },
+          "shaderCode": {
+            "shaderInputMap": {
+              "boneId": {
+                "type": "Int",
+                "semantic": {
+                  "input": "Indices",
+                  "index": 0
+                },
+                "isPerInstance": false
+              },
+              "normal": {
+                "type": "Vec4",
+                "semantic": {
+                  "input": "Normal",
+                  "index": 0
+                },
+                "isPerInstance": false
+              },
+              "position": {
+                "type": "Vec3",
+                "semantic": {
+                  "input": "Position",
+                  "index": 0
+                },
+                "isPerInstance": false
+              },
+              "instanceData0": {
+                "type": "Vec4",
+                "semantic": {
+                  "input": "TexCoord",
+                  "index": 7
+                },
+                "isPerInstance": true
+              },
+              "texcoord0": {
+                "type": "Vec2",
+                "semantic": {
+                  "input": "TexCoord",
+                  "index": 0
+                },
+                "isPerInstance": false
+              },
+              "instanceData1": {
+                "type": "Vec4",
+                "semantic": {
+                  "input": "TexCoord",
+                  "index": 6
+                },
+                "isPerInstance": true
+              },
+              "color0": {
+                "type": "Vec4",
+                "semantic": {
+                  "input": "Color",
+                  "index": 0
+                },
+                "isPerInstance": false
+              },
+              "instanceData2": {
+                "type": "Vec4",
+                "semantic": {
+                  "input": "TexCoord",
+                  "index": 5
+                },
+                "isPerInstance": true
+              },
+              "instanceData3": {
+                "type": "Vec4",
+                "semantic": {
+                  "input": "TexCoord",
+                  "index": 4
+                },
+                "isPerInstance": true
+              },
+              "texcoord1": {
+                "type": "Vec2",
+                "semantic": {
+                  "input": "TexCoord",
+                  "index": 1
+                },
+                "isPerInstance": false
+              },
+              "texcoord2": {
+                "type": "Vec2",
+                "semantic": {
+                  "input": "TexCoord",
+                  "index": 2
+                },
+                "isPerInstance": false
+              }
+            },
+            "sourceHash": -7148053686683301418,
+            "bgfxShaderData": {
+              "magic": 1448298501,
+              "hash": 170994327,
+              "uniforms": [
+                {
+                  "name": "u_view",
+                  "type": 4,
+                  "num": 1,
+                  "regIndex": 0,
+                  "regCount": 1
+                },
+                {
+                  "name": "u_viewProj",
+                  "type": 4,
+                  "num": 1,
+                  "regIndex": 0,
+                  "regCount": 1
+                },
+                {
+                  "name": "u_model",
+                  "type": 4,
+                  "num": 32,
+                  "regIndex": 0,
+                  "regCount": 32
+                },
+                {
+                  "name": "u_modelView",
+                  "type": 4,
+                  "num": 1,
+                  "regIndex": 0,
+                  "regCount": 1
+                },
+                {
+                  "name": "FogControl",
+                  "type": 2,
+                  "num": 1,
+                  "regIndex": 0,
+                  "regCount": 1
+                },
+                {
+                  "name": "OverlayColor",
+                  "type": 2,
+                  "num": 1,
+                  "regIndex": 0,
+                  "regCount": 1
+                },
+                {
+                  "name": "FogColor",
+                  "type": 2,
+                  "num": 1,
+                  "regIndex": 0,
+                  "regCount": 1
+                },
+                {
+                  "name": "BoneVectors",
+                  "type": 2,
+                  "num": 48,
+                  "regIndex": 0,
+                  "regCount": 48
+                },
+                {
+                  "name": "PlayerPosition",
+                  "type": 2,
+                  "num": 1,
+                  "regIndex": 0,
+                  "regCount": 1
+                },
+                {
+                  "name": "UVAnimation",
+                  "type": 2,
+                  "num": 1,
+                  "regIndex": 0,
+                  "regCount": 1
+                }
+              ],
+              "codeFile": "0.ESSL_100.Vertex.glsl"
+            }
+          }
+        },
+        {
+          "platformShaderStage": {
+            "stageName": "Fragment",
+            "platformName": "ESSL_100",
+            "stage": "Fragment",
+            "platform": "ESSL_100"
+          },
+          "shaderCode": {
+            "shaderInputMap": {
+              "viewSpacePosition": {
+                "type": "Vec4",
+                "semantic": {
+                  "input": "Color",
+                  "index": 1
+                },
+                "isPerInstance": false
+              },
+              "texcoord0": {
+                "type": "Vec2",
+                "semantic": {
+                  "input": "TexCoord",
+                  "index": 0
+                },
+                "isPerInstance": false
+              },
+              "color0": {
+                "type": "Vec4",
+                "semantic": {
+                  "input": "Color",
+                  "index": 0
+                },
+                "isPerInstance": false
+              },
+              "viewSpaceNormal": {
+                "type": "Vec3",
+                "semantic": {
+                  "input": "Normal",
+                  "index": 0
+                },
+                "isPerInstance": false
+              },
+              "worldSpacePosition": {
+                "type": "Vec4",
+                "semantic": {
+                  "input": "TexCoord",
+                  "index": 3
+                },
+                "isPerInstance": false
+              },
+              "fog": {
+                "type": "Vec4",
+                "semantic": {
+                  "input": "Color",
+                  "index": 2
+                },
+                "isPerInstance": false
+              },
+              "light": {
+                "type": "Vec4",
+                "semantic": {
+                  "input": "Color",
+                  "index": 3
+                },
+                "isPerInstance": false
+              }
+            },
+            "sourceHash": -345857789343800531,
+            "bgfxShaderData": {
+              "magic": 1179863045,
+              "hash": 170994327,
+              "uniforms": [
+                {
+                  "name": "u_view",
+                  "type": 4,
+                  "num": 1,
+                  "regIndex": 0,
+                  "regCount": 1
+                },
+                {
+                  "name": "ShadowBias",
+                  "type": 2,
+                  "num": 1,
+                  "regIndex": 0,
+                  "regCount": 1
+                },
+                {
+                  "name": "ChangeColor",
+                  "type": 2,
+                  "num": 1,
+                  "regIndex": 0,
+                  "regCount": 1
+                },
+                {
+                  "name": "OverlayColor",
+                  "type": 2,
+                  "num": 1,
+                  "regIndex": 0,
+                  "regCount": 1
+                },
+                {
+                  "name": "ShadowIntensity",
+                  "type": 2,
+                  "num": 1,
+                  "regIndex": 0,
+                  "regCount": 1
+                },
+                {
+                  "name": "ShadowFilterSize",
+                  "type": 2,
+                  "num": 1,
+                  "regIndex": 0,
+                  "regCount": 1
+                },
+                {
+                  "name": "LightWorldSpaceDirection",
+                  "type": 2,
+                  "num": 1,
+                  "regIndex": 0,
+                  "regCount": 1
+                },
+                {
+                  "name": "LightDiffuseColorAndIntensity",
+                  "type": 2,
+                  "num": 1,
+                  "regIndex": 0,
+                  "regCount": 1
+                },
+                {
+                  "name": "SurfaceRoughness",
+                  "type": 2,
+                  "num": 1,
+                  "regIndex": 0,
+                  "regCount": 1
+                },
+                {
+                  "name": "HudOpacity",
+                  "type": 2,
+                  "num": 1,
+                  "regIndex": 0,
+                  "regCount": 1
+                },
+                {
+                  "name": "MatColor",
+                  "type": 2,
+                  "num": 1,
+                  "regIndex": 0,
+                  "regCount": 1
+                },
+                {
+                  "name": "ShadowTexel",
+                  "type": 2,
+                  "num": 1,
+                  "regIndex": 0,
+                  "regCount": 1
+                },
+                {
+                  "name": "ShadowFadeAmount",
+                  "type": 2,
+                  "num": 1,
+                  "regIndex": 0,
+                  "regCount": 1
+                },
+                {
+                  "name": "LightAmbientColorAndIntensity",
+                  "type": 2,
+                  "num": 1,
+                  "regIndex": 0,
+                  "regCount": 1
+                },
+                {
+                  "name": "ShadowColor",
+                  "type": 2,
+                  "num": 1,
+                  "regIndex": 0,
+                  "regCount": 1
+                },
+                {
+                  "name": "ShadowTransform",
+                  "type": 4,
+                  "num": 1,
+                  "regIndex": 0,
+                  "regCount": 1
+                },
+                {
+                  "name": "s_ShadowTexture",
+                  "type": 0,
+                  "num": 1,
+                  "regIndex": 0,
+                  "regCount": 1
+                },
+                {
+                  "name": "s_MatTexture",
+                  "type": 0,
+                  "num": 1,
+                  "regIndex": 0,
+                  "regCount": 1
+                }
+              ],
+              "codeFile": "0.ESSL_100.Fragment.glsl"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "isSupported": true,
+      "flagModeList": [
+        {
+          "key": "Instancing",
+          "value": "On"
+        }
+      ],
+      "shaderCodes": [
+        {
+          "platformShaderStage": {
+            "stageName": "Vertex",
+            "platformName": "ESSL_100",
+            "stage": "Vertex",
+            "platform": "ESSL_100"
+          },
+          "shaderCode": {
+            "shaderInputMap": {
+              "boneId": {
+                "type": "Int",
+                "semantic": {
+                  "input": "Indices",
+                  "index": 0
+                },
+                "isPerInstance": false
+              },
+              "normal": {
+                "type": "Vec4",
+                "semantic": {
+                  "input": "Normal",
+                  "index": 0
+                },
+                "isPerInstance": false
+              },
+              "position": {
+                "type": "Vec3",
+                "semantic": {
+                  "input": "Position",
+                  "index": 0
+                },
+                "isPerInstance": false
+              },
+              "instanceData0": {
+                "type": "Vec4",
+                "semantic": {
+                  "input": "TexCoord",
+                  "index": 7
+                },
+                "isPerInstance": true
+              },
+              "texcoord0": {
+                "type": "Vec2",
+                "semantic": {
+                  "input": "TexCoord",
+                  "index": 0
+                },
+                "isPerInstance": false
+              },
+              "instanceData1": {
+                "type": "Vec4",
+                "semantic": {
+                  "input": "TexCoord",
+                  "index": 6
+                },
+                "isPerInstance": true
+              },
+              "color0": {
+                "type": "Vec4",
+                "semantic": {
+                  "input": "Color",
+                  "index": 0
+                },
+                "isPerInstance": false
+              },
+              "instanceData2": {
+                "type": "Vec4",
+                "semantic": {
+                  "input": "TexCoord",
+                  "index": 5
+                },
+                "isPerInstance": true
+              },
+              "instanceData3": {
+                "type": "Vec4",
+                "semantic": {
+                  "input": "TexCoord",
+                  "index": 4
+                },
+                "isPerInstance": true
+              },
+              "texcoord1": {
+                "type": "Vec2",
+                "semantic": {
+                  "input": "TexCoord",
+                  "index": 1
+                },
+                "isPerInstance": false
+              },
+              "texcoord2": {
+                "type": "Vec2",
+                "semantic": {
+                  "input": "TexCoord",
+                  "index": 2
+                },
+                "isPerInstance": false
+              }
+            },
+            "sourceHash": 7075084507950197024,
+            "bgfxShaderData": {
+              "magic": 1448298501,
+              "hash": 170994327,
+              "uniforms": [
+                {
+                  "name": "u_view",
+                  "type": 4,
+                  "num": 1,
+                  "regIndex": 0,
+                  "regCount": 1
+                },
+                {
+                  "name": "u_viewProj",
+                  "type": 4,
+                  "num": 1,
+                  "regIndex": 0,
+                  "regCount": 1
+                },
+                {
+                  "name": "u_model",
+                  "type": 4,
+                  "num": 32,
+                  "regIndex": 0,
+                  "regCount": 32
+                },
+                {
+                  "name": "u_modelView",
+                  "type": 4,
+                  "num": 1,
+                  "regIndex": 0,
+                  "regCount": 1
+                },
+                {
+                  "name": "FogControl",
+                  "type": 2,
+                  "num": 1,
+                  "regIndex": 0,
+                  "regCount": 1
+                },
+                {
+                  "name": "OverlayColor",
+                  "type": 2,
+                  "num": 1,
+                  "regIndex": 0,
+                  "regCount": 1
+                },
+                {
+                  "name": "FogColor",
+                  "type": 2,
+                  "num": 1,
+                  "regIndex": 0,
+                  "regCount": 1
+                },
+                {
+                  "name": "BoneVectors",
+                  "type": 2,
+                  "num": 48,
+                  "regIndex": 0,
+                  "regCount": 48
+                },
+                {
+                  "name": "PlayerPosition",
+                  "type": 2,
+                  "num": 1,
+                  "regIndex": 0,
+                  "regCount": 1
+                },
+                {
+                  "name": "UVAnimation",
+                  "type": 2,
+                  "num": 1,
+                  "regIndex": 0,
+                  "regCount": 1
+                }
+              ],
+              "codeFile": "1.ESSL_100.Vertex.glsl"
+            }
+          }
+        },
+        {
+          "platformShaderStage": {
+            "stageName": "Fragment",
+            "platformName": "ESSL_100",
+            "stage": "Fragment",
+            "platform": "ESSL_100"
+          },
+          "shaderCode": {
+            "shaderInputMap": {
+              "texcoord0": {
+                "type": "Vec2",
+                "semantic": {
+                  "input": "TexCoord",
+                  "index": 0
+                },
+                "isPerInstance": false
+              },
+              "viewSpacePosition": {
+                "type": "Vec4",
+                "semantic": {
+                  "input": "Color",
+                  "index": 1
+                },
+                "isPerInstance": false
+              },
+              "color0": {
+                "type": "Vec4",
+                "semantic": {
+                  "input": "Color",
+                  "index": 0
+                },
+                "isPerInstance": false
+              },
+              "viewSpaceNormal": {
+                "type": "Vec3",
+                "semantic": {
+                  "input": "Normal",
+                  "index": 0
+                },
+                "isPerInstance": false
+              },
+              "worldSpacePosition": {
+                "type": "Vec4",
+                "semantic": {
+                  "input": "TexCoord",
+                  "index": 3
+                },
+                "isPerInstance": false
+              },
+              "light": {
+                "type": "Vec4",
+                "semantic": {
+                  "input": "Color",
+                  "index": 3
+                },
+                "isPerInstance": false
+              },
+              "fog": {
+                "type": "Vec4",
+                "semantic": {
+                  "input": "Color",
+                  "index": 2
+                },
+                "isPerInstance": false
+              }
+            },
+            "sourceHash": -3521876692422039531,
+            "bgfxShaderData": {
+              "magic": 1179863045,
+              "hash": 170994327,
+              "uniforms": [
+                {
+                  "name": "u_view",
+                  "type": 4,
+                  "num": 1,
+                  "regIndex": 0,
+                  "regCount": 1
+                },
+                {
+                  "name": "ShadowBias",
+                  "type": 2,
+                  "num": 1,
+                  "regIndex": 0,
+                  "regCount": 1
+                },
+                {
+                  "name": "ChangeColor",
+                  "type": 2,
+                  "num": 1,
+                  "regIndex": 0,
+                  "regCount": 1
+                },
+                {
+                  "name": "OverlayColor",
+                  "type": 2,
+                  "num": 1,
+                  "regIndex": 0,
+                  "regCount": 1
+                },
+                {
+                  "name": "ShadowIntensity",
+                  "type": 2,
+                  "num": 1,
+                  "regIndex": 0,
+                  "regCount": 1
+                },
+                {
+                  "name": "ShadowFilterSize",
+                  "type": 2,
+                  "num": 1,
+                  "regIndex": 0,
+                  "regCount": 1
+                },
+                {
+                  "name": "LightWorldSpaceDirection",
+                  "type": 2,
+                  "num": 1,
+                  "regIndex": 0,
+                  "regCount": 1
+                },
+                {
+                  "name": "LightDiffuseColorAndIntensity",
+                  "type": 2,
+                  "num": 1,
+                  "regIndex": 0,
+                  "regCount": 1
+                },
+                {
+                  "name": "SurfaceRoughness",
+                  "type": 2,
+                  "num": 1,
+                  "regIndex": 0,
+                  "regCount": 1
+                },
+                {
+                  "name": "HudOpacity",
+                  "type": 2,
+                  "num": 1,
+                  "regIndex": 0,
+                  "regCount": 1
+                },
+                {
+                  "name": "MatColor",
+                  "type": 2,
+                  "num": 1,
+                  "regIndex": 0,
+                  "regCount": 1
+                },
+                {
+                  "name": "ShadowTexel",
+                  "type": 2,
+                  "num": 1,
+                  "regIndex": 0,
+                  "regCount": 1
+                },
+                {
+                  "name": "ShadowFadeAmount",
+                  "type": 2,
+                  "num": 1,
+                  "regIndex": 0,
+                  "regCount": 1
+                },
+                {
+                  "name": "LightAmbientColorAndIntensity",
+                  "type": 2,
+                  "num": 1,
+                  "regIndex": 0,
+                  "regCount": 1
+                },
+                {
+                  "name": "ShadowColor",
+                  "type": 2,
+                  "num": 1,
+                  "regIndex": 0,
+                  "regCount": 1
+                },
+                {
+                  "name": "ShadowTransform",
+                  "type": 4,
+                  "num": 1,
+                  "regIndex": 0,
+                  "regCount": 1
+                },
+                {
+                  "name": "s_ShadowTexture",
+                  "type": 0,
+                  "num": 1,
+                  "regIndex": 0,
+                  "regCount": 1
+                },
+                {
+                  "name": "s_MatTexture",
+                  "type": 0,
+                  "num": 1,
+                  "regIndex": 0,
+                  "regCount": 1
+                }
+              ],
+              "codeFile": "1.ESSL_100.Fragment.glsl"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
